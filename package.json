@@ -1,0 +1,30 @@
+{
+  "name": "webpack_starter_hbs",
+  "version": "1.0.0",
+  "main": "app.js",
+  "author": "Aaron Balthaser",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --config webpack/webpack.production.js",
+    "dev": "webpack-dev-server --config webpack/webpack.development.js --hot"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
+    "handlebars-loader": "^1.7.1",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^6.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "handlebars": "^4.2.0"
+  }
+}
