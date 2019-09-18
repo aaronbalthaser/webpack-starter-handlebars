@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
@@ -41,6 +42,9 @@ module.exports = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin({
+      cleanOnceBeforeBuildPatterns: ['**/*']
+    }),
     new webpack.LoaderOptionsPlugin({
       options: {
         handlebarsLoader: {}
@@ -51,7 +55,7 @@ module.exports = {
       template: './src/index.hbs'
     }),
     new MiniCssExtractPlugin({
-      filename: '[name]-styles.css',
+      filename: '[name]-styles.[contenthash].css',
       chunkFilename: '[id].css'
     })
   ]
