@@ -6,12 +6,15 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack --config webpack/webpack.production.js",
-    "dev": "webpack-dev-server --config webpack/webpack.development.js --hot"
+    "dev": "webpack-dev-server --config webpack/webpack.development.js --hot",
+    "lint": "eslint ."
   },
   "devDependencies": {
     "autoprefixer": "^9.6.1",
+    "babel-eslint": "^10.0.3",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
+    "eslint": "^6.4.0",
     "file-loader": "^4.2.0",
     "handlebars-loader": "^1.7.1",
     "html-webpack-plugin": "^3.2.0",
