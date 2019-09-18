@@ -5,4 +5,8 @@ const commonConfig = require('./webpack.common');
 
 module.exports = merge(commonConfig, {
   mode: 'production',
+  output: {
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, '../dist')
+  }
 });

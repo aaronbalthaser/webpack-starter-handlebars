@@ -6,13 +6,6 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: './src/app.js',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, '../dist')
-  },
-  devServer: {
-    port: 9000
-  },
   module: {
     rules: [
       { test: /\.hbs$/, use: ['handlebars-loader'] },
@@ -85,5 +78,4 @@ module.exports = {
       chunkFilename: '[id].css'
     })
   ]
-
 };
