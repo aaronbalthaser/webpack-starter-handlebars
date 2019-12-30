@@ -28,6 +28,6 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "handlebars": "^4.2.0"
+    "handlebars": "^4.3.0"
   }
 }
